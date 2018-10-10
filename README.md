@@ -1,2 +1,0 @@
-# RegistracniFormular
-Created with CodeSandbox
