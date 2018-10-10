@@ -7,40 +7,51 @@
 <head>
 	<title>Parcel Sandbox</title>
 	<meta charset="UTF-8" />
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-	<div id="app"></div>
 
+
+<body bgcolor="black" text="white">
+<div style="width: 600px; margin-left: auto; margin-right: auto; background-color: rgba(0,0,0,0.80); padding: 20px;">
+
+<table bordercolor="blue" border="1" cellpadding="20" cellspacing="5" frame="border">
+<tr>
+<td>
+	
+	<div id="app"></div>
 	<script src="src/index.js"></script>
+
+<h1> Registrace </h1>
+
 
 <form method="GET" autocomplete="off">
 	<!-- metoda GET to vypise nahore v URL; POST to odesle -->
-	 Křestní jméno:<br>
-	<input type="text" name="firstname" placeholder="Mickey"><br>
+	Křestní jméno:<br>
+	<input type="text" name="fn" placeholder="Mickey"><br>
 
 	<br> Příjmení:<br>
-	<input type="text" name="lastname" placeholder="Mouse"><br>
+	<input type="text" name="ln" placeholder="Mouse"><br>
 
 	<br> Titul:<br>
-	<input type="text" name="lastname" placeholder="Pan"><br>
+	<input type="text" name="t" placeholder="Pan"><br>
 	
 	<br> Adresa:<br>
-	<input type="text" name="lastname" placeholder="Ulice a č.p."><br>
-	<input type="text" name="lastname" placeholder="Město"><br>
-	<input type="text" name="lastname" placeholder="PSČ"><br>
+	<input type="text" name="s" placeholder="Ulice a č.p."><br>
+	<input type="text" name="tw" placeholder="Město"><br>
+	<input type="text" name="pst" placeholder="PSČ"><br>
 
 	<br> Kraj: <br>
-	<select name="Kraj:">
-	<option value="Praha"> Praha </option>
-	<option value="Praha"> Středočeský </option>
+	<select name="kraj">
+	<option value="prg"> Praha </option>
+	<option value="str"> Středočeský </option>
 	</select> <br>
 
 	<br> Email: <br>
-	<input type="text" name="lastname" placeholder="mickey@email.com"><br>
+	<input type="text" name="ml" placeholder="mickey@email.com"><br>
 
 	<br> Telefon:<br>
-	<input type="text" name="lastname" placeholder="+420 111 111 111"><br>
+	<input type="text" name="ph" placeholder="+420 111 111 111"><br>
 	
 	<br>Gender:
 	<br> <input type="radio" name="gender" value="male" checked> Male <br>
@@ -48,10 +59,10 @@
 	<input type="radio" name="gender" value="other"> Other <br>
 
 	<br> Nickname:<br>
-	<input type="text" name="lastname" placeholder="Myšák"><br>
+	<input type="text" name="nick" placeholder="Myšák"><br>
 	
 	<br> Heslo:<br>
-	<input type="password" name="lastname" placeholder="********"><br>
+	<input type="password" name="pass" placeholder="********"><br>
 
 	<br><input type="checkbox" checked name="souhlas" value="0">
 	Souhlasím s tím, že mé údaje, které jsem poskytl v registraci, budou organizátorem zpracovávány v rozsahu potřebném pro
@@ -59,6 +70,11 @@
 
 	<br><input type="submit" value="Odeslat">
 </form>
+
+
+</td>
+</tr>
+</table>
 
 </body>
 
